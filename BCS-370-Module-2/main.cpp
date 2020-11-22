@@ -6,9 +6,21 @@
 //
 
 #include <iostream>
+#include "Circle.cpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main()
+{
+    cout << "Integer Circle: " << endl;
+    Circle<int> cI;
+    cin >> cI;
+    cout << cI;
+    cI = cI + 4;
+    cout << cI;
+    cout << endl << "Double Circle: ";
+    Circle<double> cD;
+    cin >> cD;
+    cout << cD;
     return 0;
 }
